@@ -6,5 +6,5 @@ Write-Host `n "Folder Rights" `n -Backgroundcolor DarkGreen
 $Folder = Get-Clipboard
 
 (get-acl $Folder).Access | Format-Table -Property FileSystemRights, AccessControlType, IdentityReference
-#Get-Acl -Path $folder | format-list -property Owner, Access
+
 Read-Host "Press any Key"
