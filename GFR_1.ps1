@@ -1,5 +1,6 @@
+#Дизайн консоли - меняем цвет консоли на черный 
 [console]::BackgroundColor = "Black"
-#Дизайн консоли
+
 Clear-Host
 Write-Host `n "Folder Rights" `n -Backgroundcolor DarkGreen
 #Получаем данные из буфера обмена
