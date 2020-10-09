@@ -1,7 +1,7 @@
-# Дизайн консоли - меняем цвет консоли на черный 
-[console]::BackgroundColor = "Black"
 # Очищаем консоль перед использованием
 Clear-Host
+# Дизайн консоли - меняем цвет консоли на черный 
+[console]::BackgroundColor = "Black"
 # Легкая раскараска консоли и вывод заголовка
 Write-Host `n "Folder Rights" `n -Backgroundcolor DarkGreen
 # Получаем данные из буфера обмена
