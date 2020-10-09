@@ -1,7 +1,8 @@
 #Дизайн консоли - меняем цвет консоли на черный 
 [console]::BackgroundColor = "Black"
-
+#Очищаем консоль перед использованием
 Clear-Host
+
 Write-Host `n "Folder Rights" `n -Backgroundcolor DarkGreen
 #Получаем данные из буфера обмена
 $Folder = Get-Clipboard
