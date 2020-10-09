@@ -1,12 +1,9 @@
-#[console]::BackgroundColor = "Black"
+[console]::BackgroundColor = "Black"
+#Дизайн консоли
 Clear-Host
 Write-Host `n "Folder Rights" `n -Backgroundcolor DarkGreen
-
-#Write-Host `n (Get-Clipboard)
-
+#Получаем данные из буфера обмена
 $Folder = Get-Clipboard
-
-#Write-Host $Folder
 
 (get-acl $Folder).Access | Format-Table -Property FileSystemRights, AccessControlType, IdentityReference
 #Get-Acl -Path $folder | format-list -property Owner, Access
